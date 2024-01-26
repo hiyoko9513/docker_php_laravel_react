@@ -85,5 +85,5 @@ services:
     volumes:
       - ${WORK_DIR}:/usr/src
       - ./log/react:/root/.npm/_logs/
-    command: sh -c "cd app && yarn start" #ノーマルの場合 3000ポート
+    command: sh -c "cd app && yarn start" # ノーマルの場合 3000ポート
     # command: sh -c "cd app && npm run dev" #nextの場合

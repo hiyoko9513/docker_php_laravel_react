@@ -1,3 +1,5 @@
+include .env
+
 up-build:
 	docker-compose up -d --build
 up:
@@ -11,6 +13,16 @@ down:
 restart:
 	@make down
 	@make up-build
+# oapi
+docker/oapi/gen:
+	docker run --rm -v $(PWD)/$(WORK_DIR):/spec redocly/cli:latest bundle oapi/root.yml -o oapi/root.gen.yml
+
+docker/oapi/mock: docker/oapi/gen
+	docker run --rm -it -p 4010:4010 -v $(PWD)/$(WORK_DIR)/oapi:/tmp stoplight/prism:4 mock -h 0.0.0.0 /tmp/root.gen.yml
+
+docker/oapi/ui: docker/oapi/gen
+	docker run -p 8081:8080 -v $(PWD)/$(WORK_DIR)/oapi:/usr/share/nginx/html/api -e API_URL=api/root.gen.yml swaggerapi/swagger-ui
+
 # quick start
 quickstart:
 	cp .env.example .env &&\

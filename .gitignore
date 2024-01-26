@@ -8,7 +8,9 @@
 
 # hiyoko
 hiyoko/*
-!hiyoko/html/index.html
+!hiyoko/html
+!hiyoko/oapi
+hiyoko/oapi/root.gen.yml
 
 # infra
 infra/.env

@@ -5,6 +5,7 @@
 3. redis環境
 4. ローカル用のメールサーバー
 5. フロントにreactを利用
+6. oapiからmockを立ち上げる
 
 ※注意  
 コード補完を残すためにvendorとnode_modulesもマウントしている
