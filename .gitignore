@@ -1,0 +1,25 @@
+# exists example file
+.github/.gitmessage.txt
+
+# system file
+.idea
+.DS_Store
+.vscode
+
+# hiyoko
+hiyoko/*
+!hiyoko/html/index.html
+
+# infra
+infra/.env
+# log
+infra/log/*
+# mysql
+infra/mysql/data/*
+# nginx
+infra/nginx/sites/*.conf
+!infra/nginx/sites/default.conf
+!infra/nginx/sites/api.conf
+!infra/nginx/sites/html.conf
+
+!.gitkeep
