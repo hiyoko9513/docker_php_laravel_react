@@ -3,7 +3,6 @@ volumes:
   db-store:
   redis-store:
   certs-store:
-  tmp-node-modules-store:
 services:
   https-portal:
     image: steveltn/https-portal:1
@@ -33,7 +32,7 @@ services:
       - ./log/nginx:/var/log/nginx
     depends_on:
       - php
-      - node
+      - react
 
   php:
     build: ./php
@@ -81,8 +80,8 @@ services:
     ports:
       - "6379:6379"
 
-  node:
-    build: ./node
+  react:
+    build: ./react
     volumes:
       - ${WORK_DIR}:/usr/src
       - ./log/react:/root/.npm/_logs/

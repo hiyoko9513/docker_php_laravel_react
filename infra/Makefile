@@ -14,7 +14,7 @@ restart:
 # quick start
 quickstart:
 	cp .env.example .env &&\
-	docker-compose run --rm node npx create-react-app app --template typescript &&\
+	docker-compose run --rm react npx create-react-app app --template typescript &&\
 	docker-compose run --rm php composer create-project laravel/laravel api --prefer-dist &&\
 	docker-compose up -d
 # git
