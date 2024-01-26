@@ -83,3 +83,6 @@ $ docker-compose run --rm -w /usr/src/app node npm run css/scss
 ### サイトの増やし方メモ
 1. nginxディレクトリのsitesディレクトリに`*.conf`ファイルを追加し、
 2. docker-compose.ymlのhttps-portalのDOMAINを追加する。
+
+### xdebug情報
+phpフォルダのphp.iniに記載
