@@ -6,11 +6,11 @@
 4. ローカル用のメールサーバー
 5. フロントにreactを利用
 
-※注意
+※注意  
 コード補完を残すためにvendorとnode_modulesもマウントしている
 
 ## quick start
-reactとlaravelプロジェクトを作成するので完了まで時間を要する
+実行する場合、reactとlaravelプロジェクトを作成するので完了まで時間を要する
 ```shell
 $ cd infra && make quickstart
 ```
