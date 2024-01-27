@@ -1,5 +1,4 @@
 FROM php:8.2-fpm
-WORKDIR /var/www
 COPY php.ini /usr/local/etc/php/php.ini
 
 RUN apt-get update \

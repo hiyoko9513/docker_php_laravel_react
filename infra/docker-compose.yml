@@ -32,7 +32,7 @@ services:
       - ./log/nginx:/var/log/nginx
     depends_on:
       - php
-      - react
+      - app
 
   php:
     build: ./php
@@ -80,10 +80,10 @@ services:
     ports:
       - "6379:6379"
 
-  react:
-    build: ./react
+  app:
+    build: ./app
     volumes:
       - ${WORK_DIR}:/usr/src
-      - ./log/react:/root/.npm/_logs/
+      # - ./log/react:/root/.npm/_logs/
     command: sh -c "cd app && yarn start" # ノーマルの場合 3000ポート
-    # command: sh -c "cd app && npm run dev" #nextの場合
+    # command: sh -c "cd app && npm run dev" # nextの場合
