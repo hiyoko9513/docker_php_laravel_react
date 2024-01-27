@@ -4,8 +4,6 @@ get:
   description: Return login user info
   tags:
     - user
-  security:
-    - AuthApiKey: []
   responses:
     '200':
       description: user info

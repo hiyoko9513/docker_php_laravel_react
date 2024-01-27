@@ -16,6 +16,7 @@
 ## ドキュメント
 - [クイックスタート](./infra/docs/markdown/quickstart.md)
 - [サイトの立ち上げ手順](./infra/docs/markdown/quickstart.md)
+- [openapi](./infra/docs/markdown/openapi.md)
 - [コマンドリスト](./infra/docs/markdown/command-list.md)
 - [サイトの増やし方](./infra/docs/markdown/add-site.md)
 - [その他](./infra/docs/markdown/other.md)
@@ -33,7 +34,3 @@
 ## todo
 - laravelのoapi-codegen
 - reactのoapi-codegen
-- laravel linter
-- react linter
-- laravel test
-- react test

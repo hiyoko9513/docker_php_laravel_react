@@ -14,6 +14,8 @@ servers:
     description: local api
   - url: https://dev-api.hiyoko.com
     description: dev server api
+security:
+  - AuthApiKey: [ ]
 tags:
   # camelCase
   - name: master
