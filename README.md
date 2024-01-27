@@ -37,4 +37,3 @@
 - react linter
 - laravel test
 - react test
-- oasにuserのパスだけは追加する

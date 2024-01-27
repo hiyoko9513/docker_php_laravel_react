@@ -21,10 +21,8 @@ tags:
   - name: user
   - name: health
 paths:
-#  /v1/user:
-#    $ref: './paths/v1/user.yml'
-  #  /v1/pets/{id}:
-  #    $ref: './paths/v1/petsId.yml'
+  /v1/user:
+    $ref: './paths/v1/user.yml'
   /health:
     $ref: './paths/health.yml'
 components:
