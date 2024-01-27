@@ -103,12 +103,9 @@ phpフォルダのphp.iniに記載
 
 
 
-typescript-fetch https://openapi-generator.tech/docs/generators/typescript-fetch で生成します。Generate client code by typescript-fetch option.
-
-docker run --rm -v "${PWD}:/local" \
--u `id -u`:`id -g` \
-openapitools/openapi-generator-cli generate \
--i /local/api.json \
--g typescript-fetch \
--o /local/src/api
---additional-properties withInterfaces=true
+todo  
+- reactのoapi-codegen
+- laravelのoapi-codegen
+- laravel linter
+- react linter
+- readmeの整理
