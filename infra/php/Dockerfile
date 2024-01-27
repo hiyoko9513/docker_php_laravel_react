@@ -21,7 +21,7 @@ RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install pdo_mysql mysqli
 
 WORKDIR /usr/bin
-RUN curl -s http://getcomposer.org/installer | php &&\
+RUN curl -s https://getcomposer.org/installer | php &&\
   ln -s /usr/bin/composer.phar /usr/bin/composer
 
 # xdebug
