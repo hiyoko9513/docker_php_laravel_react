@@ -29,8 +29,3 @@
   - → apiフォルダ
 - https://html.lvh.me
   - → htmlフォルダ
-
-
-## todo
-- laravelのoapi-codegen
-- reactのoapi-codegen
