@@ -15,7 +15,7 @@
 
 ## ドキュメント
 - [クイックスタート](./infra/docs/markdown/quickstart.md)
-- [サイトの立ち上げ手順](./infra/docs/markdown/quickstart.md)
+- [サイトの立ち上げ手順](./infra/docs/markdown/startup-proce.md)
 - [openapi](./infra/docs/markdown/openapi.md)
 - [コマンドリスト](./infra/docs/markdown/command-list.md)
 - [サイトの増やし方](./infra/docs/markdown/add-site.md)
